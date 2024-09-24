@@ -17,8 +17,8 @@ def setup(request):
     global driver
     browser_name=request.config.getoption("browser_name")
     if browser_name == "chrome":
-        service_version = Service("D:\\chromedriver.exe")
-        driver = webdriver.Chrome(service=service_version)
+        # service_version = Service("D:\\chromedriver.exe")
+        driver = webdriver.Chrome()
     elif browser_name == "firefox":
         driver = webdriver.Firefox()
     elif browser_name == "IE":
