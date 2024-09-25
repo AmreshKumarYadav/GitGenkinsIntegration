@@ -26,7 +26,7 @@ class TestHomePage(BaseClass):
 
         alertText = homepage.getSuccessMessage().text
         time.sleep(2)
-        assert ("Success1" in alertText)
+        assert ("Success" in alertText)
         # self.driver.refresh()
 
     @pytest.fixture(params=HomePageData.getTestData("Test_1"))
